@@ -65,10 +65,8 @@ def handle_userinput(user_question):
 
 
 def main():
-    load_dotenv(override=True)
-    
-    OPENAI_API_KEY='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'
-    
+    load_dotenv()
+
     st.set_page_config(page_title="Digital Minds 2023",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
