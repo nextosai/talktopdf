@@ -76,7 +76,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Treimanento de Inteligencia Artificial :books:")
+    st.header("Treinamento de Inteligencia Artificial :books:")
     user_question = st.text_input("Sua pergunta:")
     if user_question:
         handle_userinput(user_question)
