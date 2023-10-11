@@ -66,7 +66,7 @@ def handle_userinput(user_question):
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Creative Society Media, LLC - Digital Minds 2023",
+    st.set_page_config(page_title="Digital Minds 2023",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
 
@@ -75,7 +75,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Creative Society Media, LLC - Digital Minds 2023 :books:")
+    st.header("Digital Minds 2023 :books:")
     user_question = st.text_input("Ask a question about your documents:")
     if user_question:
         handle_userinput(user_question)
